@@ -24,22 +24,22 @@
     <section id="homepage">
       <div id="headline">
         <h1 class="welc_txt">Watch Movies and TV Shows for free</h1>
-        <a class="btn" href="#"
+        <a class="btn" href="#movies"
           ><button class="main_btn play">WATCH NOW</button></a
         >
       </div>
     </section>
-    <section id="movies">
+    <section id="movies" class="height">
       <div class="container">
         <div class="movie_card">
           <!-- movie card from here -->
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/47_ronin.png" alt=""
+              ><img class="card_img" src="img/movPosters/47_ronin.png" alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>47 RONIN</span></div>
+            <div class="m_title"><span>47 Ronin</span></div>
             <div class="m_rel_date"><span>2013</span></div>
           </div>
           <div class="info_rating">
@@ -52,11 +52,14 @@
         <div class="movie_card">
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/source_code.png" alt=""
+              ><img
+                class="card_img"
+                src="img/movPosters/source_code.png"
+                alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>SOURCE CODE</span></div>
+            <div class="m_title"><span>Source Code</span></div>
             <div class="m_rel_date"><span>2011</span></div>
           </div>
           <div class="info_rating">
@@ -67,11 +70,11 @@
         <div class="movie_card">
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/archive.png" alt=""
+              ><img class="card_img" src="img/movPosters/archive.png" alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>ARCHIVE</span></div>
+            <div class="m_title"><span>Archive</span></div>
             <div class="m_rel_date"><span>2020</span></div>
           </div>
           <div class="info_rating">
@@ -82,11 +85,11 @@
         <div class="movie_card">
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/the_matrix.png" alt=""
+              ><img class="card_img" src="img/movPosters/the_matrix.png" alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>THE MATRIX</span></div>
+            <div class="m_title"><span>The Matrix</span></div>
             <div class="m_rel_date"><span>1999</span></div>
           </div>
           <div class="info_rating">
@@ -94,8 +97,10 @@
             <div class="m_rating"><span>8.7</span></div>
           </div>
         </div>
-        <div class="movie_card cnt">
-          <a href="#"><span class="more">MORE</span></a>
+        <div class="movie_card cnt" id="movieMore">
+          <a href="#movies" class="moreMovies"
+            ><span class="more">MORE</span></a
+          >
         </div>
       </div>
     </section>
@@ -105,11 +110,14 @@
           <!-- movie card from here -->
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/black_mirror.png" alt=""
+              ><img
+                class="card_img"
+                src="img/movPosters/black_mirror.png"
+                alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>BLACK MIRROR</span></div>
+            <div class="m_title"><span>Black Mirror</span></div>
             <div class="m_rel_date"><span>2011-</span></div>
           </div>
           <div class="info_rating">
@@ -121,11 +129,11 @@
         <div class="movie_card">
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/dark.png" alt=""
+              ><img class="card_img" src="img/movPosters/dark.png" alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>DARK</span></div>
+            <div class="m_title"><span>Dark</span></div>
             <div class="m_rel_date"><span>2017-2020</span></div>
           </div>
           <div class="info_rating">
@@ -136,11 +144,11 @@
         <div class="movie_card">
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/house.png" alt=""
+              ><img class="card_img" src="img/movPosters/house.png" alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>HOUSE</span></div>
+            <div class="m_title"><span>House</span></div>
             <div class="m_rel_date"><span>2004-2012</span></div>
           </div>
           <div class="info_rating">
@@ -151,11 +159,14 @@
         <div class="movie_card">
           <div>
             <a href="#" class="playNew"
-              ><img class="card_img" src="img/breaking_bad.png" alt=""
+              ><img
+                class="card_img"
+                src="img/movPosters/breaking_bad.png"
+                alt=""
             /></a>
           </div>
           <div class="title_date">
-            <div class="m_title"><span>BREAKING BAD</span></div>
+            <div class="m_title"><span>Breaking Bad</span></div>
             <div class="m_rel_date"><span>2008-2013</span></div>
           </div>
           <div class="info_rating">
@@ -170,6 +181,7 @@
     </section>
     <section id="contact"></section>
     <script src="movies.js" type="module"></script>
+    <script src="moviesNew.js" type="module"></script>
     <script src="script.js" type="module"></script>
   </body>
 </html>

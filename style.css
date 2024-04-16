@@ -17,6 +17,9 @@ button {
   color: #edf0f1;
   text-decoration: none;
 }
+button {
+  color: #15191a;
+}
 
 header {
   display: flex;
@@ -57,7 +60,7 @@ header {
 .search_btn:hover,
 .main_btn:hover {
   background-color: rgba(230, 179, 37, 0.8);
-  color: #15191a;
+  color: #edf0f1;
 }
 #homepage {
   background-color: #2c3639;
@@ -105,9 +108,12 @@ header {
   justify-content: center;
 }
 #homepage,
-#movies,
 #tv_shows,
 #contact {
+  height: 100vh;
+}
+
+.height {
   height: 100vh;
 }
 .container {
@@ -120,7 +126,11 @@ header {
 .movie_card {
   width: 15%;
   height: auto;
+
   /* opacity: 0.8; */
+}
+.margin {
+  margin: 5%;
 }
 /* .movie_card:hover {
   opacity: 1;
@@ -164,4 +174,16 @@ a {
   width: 75%;
   height: 70%;
   background-color: rgb(109, 109, 109);
+}
+.closePlayer {
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 9px 25px;
+  background-color: rgba(230, 179, 37, 1);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+.closePlayer:hover {
+  color: #edf0f1;
 }
