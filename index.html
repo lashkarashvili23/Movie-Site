@@ -13,7 +13,7 @@
   <body>
     <header>
       <!--Header - includes logo, nav and search input from here -->
-      <a href="#"><img class="logo" src="img/logo.png" alt="logo" /></a>
+      <a href="#"><i class="fa-solid fa-circle-play fa-2x logo"></i></a>
       <nav>
         <ul class="nav__links">
           <li><a class="a_nav pageReload" href="#">HOME</a></li>
@@ -31,8 +31,8 @@
             placeholder="Search.."
             name="search"
           />
-          <button type="submit" id="search_Btn">
-            <i class="fa fa-search"></i>
+          <button type="submit" class="search_Btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
@@ -199,7 +199,69 @@
         <!---->
       </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+      <!-- <div id="aboutUs">
+        <h1>This website was made purely for presentation.</h1>
+      </div> -->
+      <div id="formAndMap">
+        <div id="form">
+          <h2 id="aboutUs">Contact Us</h2>
+
+          <form id="contactForm" action="/submit_form" method="post">
+            <label for="name">Name</label>
+            <input
+              class="txt"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              class="txt"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.."
+              style="height: 200px"
+              required
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.112948027464!2d-80.188727!3d25.766832599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b68295aaaaab%3A0x2448ec2ae712782d!2s701%20Brickell%20Ave%20Suite%201250%2C%20Miami%2C%20FL%2033131%2C%20USA!5e0!3m2!1sen!2sge!4v1713519263160!5m2!1sen!2sge"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div id="socMedia">
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/652ac6cebb.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="movies.js" type="module"></script>
     <script src="moviesNew.js" type="module"></script>
     <script src="script.js" type="module"></script>
