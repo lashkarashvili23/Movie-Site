@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,13 +16,26 @@
       <a href="#"><img class="logo" src="img/logo.png" alt="logo" /></a>
       <nav>
         <ul class="nav__links">
-          <li><a class="a_nav" href="#homepage">HOME</a></li>
-          <li><a class="a_nav" href="#movies">MOVIES</a></li>
-          <li><a class="a_nav" href="#tv_shows">TV SHOWS</a></li>
+          <li><a class="a_nav pageReload" href="#">HOME</a></li>
+          <li><a class="a_nav moreMoviesNav" href="#movies">MOVIES</a></li>
+          <li><a class="a_nav moreTvShowsNav" href="#tv_shows">TV SHOWS</a></li>
           <li><a class="a_nav" href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-      <a class="cta" href="#"><button class="search_btn">SEARCH</button></a>
+      <!-- <a class="cta" href="#"><button class="search_btn">SEARCH</button></a>-->
+      <div class="search-container">
+        <form action="#">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search.."
+            name="search"
+          />
+          <button type="submit" id="search_Btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
     </header>
     <!--Header - includes logo, nav and search input to there -->
     <section id="homepage">
