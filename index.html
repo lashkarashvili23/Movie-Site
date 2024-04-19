@@ -13,7 +13,9 @@
   <body>
     <header>
       <!--Header - includes logo, nav and search input from here -->
-      <a href="#"><i class="fa-solid fa-circle-play fa-2x logo"></i></a>
+      <a href="#" id="logoID"
+        ><i class="fa-solid fa-circle-play fa-2x logo"></i
+      ></a>
       <nav>
         <ul class="nav__links">
           <li><a class="a_nav pageReload" href="#">HOME</a></li>
@@ -24,14 +26,14 @@
       </nav>
       <!-- <a class="cta" href="#"><button class="search_btn">SEARCH</button></a>-->
       <div class="search-container">
-        <form action="#">
+        <form action="#" class="input_search">
           <input
             type="text"
             id="searchInput"
             placeholder="Search.."
             name="search"
           />
-          <button type="submit" class="search_Btn">
+          <button type="submit" id="search_Btn" class="search_Btn">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
