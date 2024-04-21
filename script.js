@@ -211,6 +211,9 @@ const homeReload = function refreshPage() {
 };
 reloadBtn.addEventListener("click", homeReload);
 
+document.getElementById("scrollUp").addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
 // function hasPropertyIgnoreCase(obj, propName) {
 //   const lowerPropName = propName.toLowerCase(); // Convert the property name to lowercase
 //   return Object.keys(obj).some((key) => key.toLowerCase() === lowerPropName); // Check if any key matches the lowercase property name

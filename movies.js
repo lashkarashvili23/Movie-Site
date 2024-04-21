@@ -69,5 +69,5 @@ export const moviess = {
   Narcos: "https://www.youtube.com/embed/xl8zdCY-abw?si=5CHcpVHFoamsiQMJ",
   Sherlock: "https://www.youtube.com/embed/iK7oLSM7g8w?si=_H0pTslyqzAfuR1-",
   Vikings: "https://www.youtube.com/embed/9GgxinPwAGc?si=mmX3RZZ4OQYrtEKF",
-  "The Boys": "https://www.youtube.com/embed/M1bhOaLV4FU?si=oJ_scRjx9w4dvtmU",
+  "The Boys": "https://www.youtube.com/embed/5SKP1_F7ReE?si=AF_if-lWDA0W1N2Y",
 };

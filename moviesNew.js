@@ -320,6 +320,6 @@ export const tvShows = [
     length: "60",
     rating: "8.7",
     imgSrc: "the_boys.png",
-    vidSrc: "https://www.youtube.com/embed/M1bhOaLV4FU?si=oJ_scRjx9w4dvtmU",
+    vidSrc: "https://www.youtube.com/embed/M1bhOaLV4FU?si=up_Zy6HBJsq0uT0q",
   },
 ];

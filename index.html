@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header>
@@ -24,7 +25,6 @@
           <li><a class="a_nav" href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-      <!-- <a class="cta" href="#"><button class="search_btn">SEARCH</button></a>-->
       <div class="search-container">
         <form action="#" class="input_search">
           <input
@@ -66,7 +66,6 @@
             <div class="m_rating"><span>6.2</span></div>
           </div>
         </div>
-
         <!-- movie card to there -->
         <div class="movie_card">
           <div>
@@ -202,14 +201,16 @@
       </div>
     </section>
     <section id="contact">
-      <!-- <div id="aboutUs">
-        <h1>This website was made purely for presentation.</h1>
-      </div> -->
       <div id="formAndMap">
         <div id="form">
           <h2 id="aboutUs">Contact Us</h2>
 
-          <form id="contactForm" action="/submit_form" method="post">
+          <form
+            class="gform"
+            id="contactForm"
+            action="https://script.google.com/macros/s/AKfycbyHk4HIQEABYLCDb5t6NtZUrVd6cneVtbbssVtKT06tvn1zLxRSy9JM28R6vLpW0slF/exec"
+            method="post"
+          >
             <label for="name">Name</label>
             <input
               class="txt"
@@ -240,6 +241,10 @@
             ></textarea>
 
             <input type="submit" value="Submit" />
+            <div style="display: none" class="thankyou_message">
+              <!-- thankyou message -->
+              <h2>message was sent.</h2>
+            </div>
           </form>
         </div>
         <div id="map">
@@ -259,6 +264,7 @@
         <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
         <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
       </div>
+      <i id="scrollUp" class="fa-solid fa-chevron-up fa-3x"></i>
     </section>
     <script
       src="https://kit.fontawesome.com/652ac6cebb.js"
@@ -267,5 +273,10 @@
     <script src="movies.js" type="module"></script>
     <script src="moviesNew.js" type="module"></script>
     <script src="script.js" type="module"></script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="form-submission-handler.js"
+    ></script>
   </body>
 </html>
