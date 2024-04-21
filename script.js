@@ -8,7 +8,6 @@ let tvShowOn = true;
 let moviesOpened = false;
 let tvShowOpend = false;
 
-// const mainBtn = document.querySelector(".play");
 const mainBtn = document.querySelector(".play");
 const searchBtn = document.getElementById("search_Btn");
 // Select all elements with the class name "playNew"
@@ -27,7 +26,6 @@ const sinema = document.createElement("div");
 const closeMovie = function () {
   parentElement.removeChild(sinema);
   document.getElementById("homepage").style.display = "none";
-  // headline.style.display = "flex";
 };
 
 const playMovie = function (movieName) {
@@ -63,9 +61,6 @@ playButtons.forEach(function (playButton) {
     playMovie(titleContent);
   });
 });
-
-// mainBtnNew.addEventListener("click", playMovie);
-// mainBtn.addEventListener("click", playMovie);
 
 // Select the parent element that will contain the button(s)
 const parentElement = document.getElementById("homepage");
@@ -121,9 +116,6 @@ const moviePageNew = function () {
     movieOn = !movieOn;
     tvShowOn = true;
   }
-  console.log(movieOn);
-  console.log(tvShowOn);
-  console.log(moviesOpened);
 };
 
 allMovies.addEventListener("click", moviePageNew);
@@ -173,9 +165,6 @@ const tvShowPageNew = function () {
     tvShowOn = !tvShowOn;
     movieOn = true;
   }
-  console.log(movieOn);
-  console.log(tvShowOn);
-  console.log(tvShowOpend);
 };
 
 allTvShows.addEventListener("click", tvShowPageNew);
@@ -214,10 +203,6 @@ reloadBtn.addEventListener("click", homeReload);
 document.getElementById("scrollUp").addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
-// function hasPropertyIgnoreCase(obj, propName) {
-//   const lowerPropName = propName.toLowerCase(); // Convert the property name to lowercase
-//   return Object.keys(obj).some((key) => key.toLowerCase() === lowerPropName); // Check if any key matches the lowercase property name
-// }
 function toTitleCase(str) {
   return str.toLowerCase().replace(/\b\w/g, function (txt) {
     return txt.toUpperCase();
@@ -228,7 +213,6 @@ const searchFilm = function (filmName) {
   if (moviess.hasOwnProperty(filmName)) {
     playMovie(filmName);
     window.scrollTo(0, 0);
-    // window.location.href = "";
   } else {
     alert(`Movie/TV Show named "${filmName}" doesn't found`);
   }
@@ -247,7 +231,6 @@ document.addEventListener("DOMContentLoaded", function () {
   searchBtn.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent form submission
     let searchTerm = searchInput.value.trim().toLowerCase(); // Get the search term
-    console.log(searchTerm); // Log the search term
     searchFilm(toTitleCase(searchTerm));
   });
 });
