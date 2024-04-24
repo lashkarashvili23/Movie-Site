@@ -5,7 +5,7 @@ Movie Site is a simple web application that allows users to browse and discover 
 
 ### Demo
 
-[Link to Live Demo](https://lashkarashvili23.github.io/movie-site/)
+[Link to Live Demo](https://lashkarashvili23.github.io/Movie-Site/)
 
 ### Features
 - Browse some movies/tv-shows
